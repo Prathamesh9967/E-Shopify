@@ -28,7 +28,8 @@ const Checkout = ({ cart , order , onCaptureCheckout , error }) => {
         }
 
         generateToken();
-    }, [cart]);
+        // eslint-disable-next-line
+    }, [cart]); 
 
     const nextStep = () => setactiveStep((prevActiveStep) => prevActiveStep + 1 )
     const backStep = () => setactiveStep((prevActiveStep) => prevActiveStep - 1 )
